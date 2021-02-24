@@ -12,7 +12,7 @@ script:
   - docker run -e CI=true vimalpillai1/docker-react npm run test -- --coverage
 
 deploy:
-  provider: elasticbeanstaslk
+  provider: elasticbeanstalk
   region: "us-east-2"
   app: "reactindocker"
   env: "docker-env"
